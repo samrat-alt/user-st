@@ -6,10 +6,20 @@ import (
 )
 
 func main() {
-	user := user.GetUserInput()
-	fmt.Println("User Details:")
-	fmt.Println("Name:", user.Name)
-	fmt.Println("Email:", user.Email)
-	fmt.Println("PhoneNumber:", user.PhoneNumber)
-	fmt.Println("PhoneNumber:", user.Address)
+	var Aswe string
+	for {
+		user := user.GetUserInput()
+		fmt.Println()
+		fmt.Println(user.Name)
+		fmt.Println(user.Email)
+		fmt.Println(user.PhoneNumber)
+		fmt.Println(user.Address)
+
+		fmt.Println("want to contiune yes/no")
+		fmt.Scanln(&Aswe)
+		if Aswe != "yes" {
+			break
+		}
+	}
+
 }
