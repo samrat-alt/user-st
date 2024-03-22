@@ -21,5 +21,6 @@ func main() {
 			break
 		}
 	}
+	fmt.Println("bye")
 
 }
