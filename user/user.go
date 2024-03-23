@@ -18,37 +18,13 @@ func getInput(input string) (output string) {
 }
 func GetUserInput() User {
 	var user User
-
-	// fmt.Println("Enter your Email:")
-	// fmt.Scanln(&user.Email)
+	user.Id = getInput("Id")
+	user.Name = getInput("name")
 
 	user.Email = getInput("Email")
 
-	// fmt.Println("Enter your PhoneNumber:")
-	// fmt.Scanln(&user.PhoneNumber)
 	user.PhoneNumber = getInput("PhoneNumber")
 
-	// fmt.Println("Enter your Address:")
-	// fmt.Scanln(&user.Address)
 	user.Address = getInput("Address")
 	return user
 }
-
-func DeletUser(id string) (input string) {
-	fmt.Printf("enter %s", id)
-	fmt.Scanln(&input)
-	return input
-}
-
-// func DeletUserInput(id string) User {
-// 	var user User
-
-// 	user.Email = getInput("Email")
-// 	user.PhoneNumber = getInput("PhoneNumber")
-// 	user.Address = getInput("Address")
-// 	return user
-
-// }
-
-// fmt.Println("Enter your Email:")
-// fmt.Scanln(&user.Email)
