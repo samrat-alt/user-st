@@ -34,10 +34,10 @@ func GetUserInput() User {
 	return user
 }
 
-func DeletUser(id string) (output string) {
+func DeletUser(id string) (input string) {
 	fmt.Printf("enter %s", id)
-	fmt.Scanln(&output)
-	return output
+	fmt.Scanln(&input)
+	return input
 }
 
 // func DeletUserInput(id string) User {

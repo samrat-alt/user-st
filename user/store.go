@@ -23,7 +23,21 @@ func (u UserStore) DeletUser(id string) []User {
 	return u
 
 }
+func (u UserStore) UpdateUser(id string, user User) {
+	for i, user := range u {
+		if user.Id == id {
+			// u[i].Address = user.Address
+			// u[i].Email = user.Email
+			u[i] = user
+
+			break
+
+		}
+	}
+
+}
+
+func (u UserStore) GetbyId(id string)
 
 //create a delete function which will have id as parameter and remove the id from given arry
-//update a user function which will have id and user parameter and update taken from para meter
-//get by id and retrun
+//create update a user function which will have id and  user as  parameter and update taken from parameter get update by id and retrun
